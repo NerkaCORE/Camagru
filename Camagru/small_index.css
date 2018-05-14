@@ -1,0 +1,564 @@
+body, html.index{
+    background-color: #fafafa;
+    min-height: 100%;
+    height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+body.gallery{
+    background-color: #fafafa;
+}
+
+main{
+    background-color: #fafafa;
+    position: relative;
+    display: flex;
+}
+
+section.full{
+    min-height: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.screen{
+    min-height: 100%;
+}
+
+section.gallery{
+    /*padding-top: 60px;*/
+    padding-bottom: 60px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-flow: row nowrap;
+}
+
+section.commentary{
+    margin-top: 4px;
+    border-top: 1px solid #efefef;
+    color: #999;
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 40px;
+    padding: 16px 0;
+    justify-content: left;
+    flex-shrink: 0;
+    position: relative;
+}
+
+section.center{
+    display: flex;
+    padding-top: 147px;
+    flex-flow: row nowrap;
+    max-width: 999px;
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+nav.nav{
+    /*border-bottom: 1px solid black;*/
+    /*border: #003569;*/
+    padding: 0;
+    /*flex-grow: 1;*/
+    height: 75px;
+    position: fixed;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    flex-direction: column;
+    z-index: 2;
+    width: 100%;
+}
+
+header.hlmedia{
+    height: 50px;
+    padding: 5px;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    background-color: #fff;
+}
+
+div.width{
+    max-width: 899px;
+    width: 100%;
+}
+
+div.top{
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    flex-shrink: 0;
+    font: inherit;
+}
+
+div.flex{
+    flex-basis: 75px;
+}
+
+div.ftop{
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    height: 77px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+div.pieces{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding: 21px 0;
+    margin: 0 auto;
+    transition: height .2s ease-in-out;
+}
+
+div.left{
+    display: flex;
+    flex: 1 0 0;
+    min-width: 40px;
+    max-width: 100%;
+    position: relative;
+    height: 35px;
+    background-image: url("pics/logo.png");
+    background-repeat: no-repeat;
+    /*margin-left: 38px;*/
+}
+
+div.right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 0 0;
+    height: 35px;
+    justify-content: flex-end;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    position: relative;
+    /*padding: 4px;*/
+    /*margin-top: 0.3%;*/
+    /*margin-right: 32px;*/
+}
+
+div.icons{
+    display: flex;
+    flex-direction: row;
+    padding-left: 24px;
+    padding-top: 3px;
+    white-space: nowrap;
+    position: relative;
+    /*min-width: 156px;*/
+}
+
+div.compass {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: stretch;
+    min-height: 24px;
+    min-width: 24px;
+    height: 24px;
+    /*width: 24px;*/
+}
+
+div.heart{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 30px;
+    min-height: 24px;
+    min-width: 24px;
+    height: 24px;
+    /*width: 24px;*/
+}
+
+div.head{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 30px;
+    min-height: 24px;
+    min-width: 24px;
+    height: 24px;
+    /*width: 24px;*/
+}
+
+div.gleft{
+    /*float: left;*/
+    max-width: 899px;
+    width: 100%;
+    /*margin-right: 28px;*/
+    /*margin-left: 12%;*/
+}
+
+div.leftcadre{
+    padding-top: 0;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    width: 100%;
+    /*padding-bottom: 40161.2px;*/
+}
+
+div.plogo{
+    padding: 4px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    position: relative;
+}
+
+div.lmedia{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: 0 solid #000;
+    flex-shrink: 0;
+    align-items: stretch;
+}
+
+div.fmedia{
+    /*height: 613px;*/
+    max-width: 899px;
+    width: 100%;
+    height: 100%;
+    max-height: 614px;
+    display: block;
+    /*padding-bottom: 100%;*/
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+div.tagsncom{
+    padding: 5px 16px;
+    background-color: #fff;
+}
+
+div.profil{
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-box-flex: 1;
+    align-items: flex-start;
+    overflow: hidden;
+    margin-left: 12px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+    max-width: 458px;
+    width: 100%;
+    max-height:17px;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+div.comntags{
+    min-height: 0;
+    flex-shrink: 1;
+    flex-grow: 1;
+    padding-top: 5px;
+    display: flex;
+}
+
+div.more{
+    right: 26px;
+    top: auto;
+    bottom: 14px;
+    height: 52px;
+    width: 34px;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div.gright{
+    height: 100vh;
+    /*padding-top: 70px;*/
+    margin-bottom: 30px;
+    max-width: 205px;
+    width: 100%;
+    position: relative;
+    /*top: 78px;*/
+    /*left: 728px;*/
+}
+
+div.profilperso{
+    display: flex;
+    align-items: center;
+    height: 62px;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+}
+
+div.profilontop{
+    display: flex;
+    max-height: 50px;
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    flex-direction: row;
+    margin-bottom: 12px;
+    align-items: center;
+    position: relative;
+}
+
+div.profilpic{
+    width: 50px;
+    height: 50px;
+    display: block;
+    flex: none;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+div.profilname{
+    margin-left: 14px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+div.pname{
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+}
+
+div.accname{
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    color: #999;
+    position: relative;
+}
+
+div.footer{
+    padding-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+}
+
+a.log{
+    height: 30px;
+    width: 52px;
+}
+
+a.compass{
+    background-image: url("pics/photo.png");
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 32px;
+}
+
+a.heart{
+    background-image: url("pics/heart.png");
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 32px;
+}
+
+a.head{
+    background-image: url("pics/head.png");
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 32px;
+}
+
+a.profil{
+    text-decoration: none;
+    font-weight: 600;
+    color: #262626;
+}
+
+a.likes{
+    text-decoration: none;
+    font-weight: 600;
+    color: #262626;
+    margin-left: 2%;
+
+}
+
+a.tags{
+    text-decoration: none;
+    color: #003569;
+}
+
+a.title{
+    text-decoration: none;
+    font-weight: 600;
+    color: #262626;
+}
+
+a.lastposttime{
+    text-decoration: none;
+    color: #999999;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+a.pname{
+    text-decoration: none;
+    color: #262626;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a.foot{
+    text-decoration: none;
+    color: #c7c7c7;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    text-transform: capitalize;
+}
+
+img.plogo{
+    max-height: 30px;
+    max-width: 30px;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: relative;
+}
+
+img.mainimg{
+    max-height: 613px;
+    max-width: 899px;
+    height: 100%;
+    width: 100%;
+}
+
+img.like{
+    margin-left: 2%;
+}
+
+img.comment{
+    margin-left: 2%;
+}
+
+img.bookmark{
+    float: right;
+    margin-right: 3%;
+    margin-top: 2.6%;
+}
+
+img.profilpic{
+    max-height: 50px;
+    max-width: 50px;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+button.more{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 16px;
+    height: 28px;
+    width: 34px;
+}
+
+form.commentary{
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    flex-shrink: 1;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+textarea.commentary{
+    background: 0 0;
+    border: 0;
+    color: #262626;
+    font-size: inherit;
+    max-height: 80px;
+    outline: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    resize: none;
+    overflow: auto;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+hr.underprofil{
+    border-top: 0 solid #efefef;
+    border-left: 0;
+    height: 1px;
+    width: 100%;
+    margin: 0 0 12px;
+
+}
+
+@media (max-width: 1000px)
+{
+    div.gright
+    {
+        display: none;
+    }
+
+    section.center
+    {
+        max-width: 499px;
+    }
+    /*div.gleft*/
+    /*{*/
+        /*!*display: flex;*!*/
+        /*!*position: relative;*!*/
+        /*width: 100%;*/
+    /*}*/
+}

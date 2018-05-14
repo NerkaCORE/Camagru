@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+    <link rel="stylesheet" href="profile.css"/>
+</head>
+<body>
+<section class="screen">
+    <nav class="nav">
+    <div class="flex"></div>
+    <div class="top">
+        <div class="ftop">
+            <div class="pieces">
+                <div class="left">
+                    <a class="log" href="gallery.html"></a>
+                </div>
+                <div class="right">
+                    <div class="icons">
+                        <div class="compass">
+                            <a class="compass" href="photo.html"></a>
+                        </div>
+                        <div class="heart">
+                            <a class="heart" href="gallery.html"></a>
+                        </div>
+                        <div class="head">
+                            <a class="head" href="profile.html"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <main class="body">
+        <div class="cam">
+            <div class="webcam">
+                <video id="video"></video>
+            </div>
+            <div class="canvas">
+                <canvas id="canvas"></canvas>
+            </div>
+            <br/>
+        </div>
+        <button class="snap" onclick="takepicture();">Snap</button>
+        <script type="text/javascript" src="webcam/webcam.js"></script>
+    </main>
+</section>
+</body>
+</html>

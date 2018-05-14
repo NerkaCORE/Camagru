@@ -1,0 +1,675 @@
+body, html.index{
+    background-color: #fafafa;
+    min-height: 100%;
+    height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+section.screen{
+    min-height: 100%;
+    overflow: hidden;
+    /*align-items: stretch;*/
+    /*display: flex;*/
+    /*position: relative;*/
+    /*flex-direction: column;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*flex-shrink: 0;*/
+}
+
+/*                !!!!!!!!!!  Nav  !!!!!!!!!!             */
+
+nav.nav{
+    /*border-bottom: 1px solid black;*/
+    /*border: #003569;*/
+    padding: 0;
+    /*flex-grow: 1;*/
+    height: 75px;
+    position: fixed;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    flex-direction: column;
+    z-index: 2;
+    width: 100%;
+}
+
+div.top{
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    flex-shrink: 0;
+    font: inherit;
+}
+div.flex{
+    flex-basis: 75px;
+}
+div.ftop{
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    height: 77px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+div.pieces{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 930px;
+    padding: 21px 0;
+    margin: 0 auto;
+    transition: height .2s ease-in-out;
+}
+div.left{
+    display: flex;
+    flex: 1 0 0;
+    min-width: 40px;
+    max-width: 100%;
+    position: relative;
+    height: 35px;
+    background-image: url("pics/logo.png");
+    background-repeat: no-repeat;
+    /*margin-left: 38px;*/
+}
+div.right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 0 0;
+    height: 35px;
+    justify-content: flex-end;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    position: relative;
+    padding: 4px;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    /*margin-top: 0.3%;*/
+    /*margin-right: 32px;*/
+}
+div.icons{
+    display: flex;
+    flex-direction: row;
+    padding-left: 24px;
+    padding-top: 3px;
+    white-space: nowrap;
+    position: relative;
+}
+div.compass .heart .head{
+    min-height: 24px;
+    min-width: 24px;
+}
+div.compass {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+div.heart{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+div.head{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+div.webcam{
+    display: flex;
+    position: relative;
+    max-height: 450px;
+    min-height: 450px;
+    max-width: 640px;
+    height: 100%;
+    width: 100%;
+    top: 150px;
+    left: 85px;
+    /*margin: 130px 71px;*/
+    /*padding: 20px;*/
+    border: 0px solid grey;
+}
+
+div.canvas{
+    display: flex;
+    position: relative;
+    max-height: 450px;
+    min-height: 450px;
+    max-width: 600px;
+    height: 100%;
+    width: 100%;
+    top: 160px;
+    left: 105px;
+    /*margin: 70px 71px;*/
+    /*border: 1px solid grey;*/
+}
+
+a.compass{
+    background-image: url("pics/photo.png");
+    height: 24px;
+    width: 32px;
+    background-repeat: no-repeat;
+}
+a.heart{
+    background-image: url("pics/heart.png");
+    height: 24px;
+    width: 32px;
+    background-repeat: no-repeat;
+}
+a.head{
+    background-image: url("pics/head.png");
+    height: 24px;
+    width: 32px;
+    background-repeat: no-repeat;
+}
+
+a.log{
+    height: 30px;
+    width: 52px;
+}
+
+/*                    !!!!!!!!!! Main !!!!!!!!!!                    */
+
+main{
+    background-color: #fafafa;
+    position: relative;
+    display: flex;
+}
+
+article.fs{
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 935px;
+    width: 100%;
+    padding: 0;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+header.profile{
+    flex-direction: row;
+    align-items: stretch;
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    border: 0 solid #000;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+}
+
+div.leftprofile{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+section.rightprofile{
+    color: #262626;
+    flex-shrink: 1;
+    min-width: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    flex-direction: column;
+
+}
+
+div.leftprofpicsize{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.picprofform{
+    background-color: #fafafa;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+div.header{
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+div.param{
+    display: flex;
+    /*margin: 0;*/
+    padding: 0;
+    position: relative;
+    align-items: stretch;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-shrink: 0;
+    height: 0;
+    margin-left: 5px;
+    margin-right: -10px;
+    background-color: #fafafa;
+}
+
+div.comment{
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    flex-shrink: 0;
+    flex-direction: column;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+div.profilposttop{
+    display: flex;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    border-top: 1px solid #efefef;
+    font-size: 12px;
+    font-weight: 600;
+    -moz-box-pack: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #999;
+    align-items: center;
+}
+
+div.photoposted{
+    display: flex;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    align-items: stretch;
+    flex-direction: column;
+    /*padding-bottom: 0px;*/
+    /*padding-top: ;*/
+}
+
+div.photoline{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    flex-shrink: 0;
+    box-sizing: border-box;
+
+}
+
+button.changeprofpic{
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+button.editprof{
+    padding: 0 12px;
+    cursor: pointer;
+    background: 0 0;
+    color: #262626;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+button.snap{
+    height: 42px;
+    width: 95px;
+    margin: 100px 5px;
+    padding: 0 12px;
+    cursor: pointer;
+    background: 0 0;
+    color: #262626;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    /*width: 100%;*/
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+button.param{
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+    background-image: url(pics/param.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    /*background-position: -156px -479px;*/
+    height: 24px;
+    width: 24px;
+    margin-left: 2px;
+    margin-top: -12px;
+}
+
+h1.profilename{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+h1.name{
+    display: inline;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+a.editprofile{
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    display: block;
+    margin-left: 20px;
+    flex-shrink: 0;
+    color: #003569;
+    text-decoration: none;
+}
+
+a.following{
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+a.followers{
+    color: inherit;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+a.postnsave{
+    text-decoration: none;
+    color: #262626;
+    -webkit-box-align: center;
+    align-items: center;
+    border-top: 1px solid #262626;
+    display: flex;
+    cursor: pointer;
+    height: 52px;
+    flex-direction: row;
+    justify-content: center;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+img.changepic{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+span.editprofile{
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ul.postnfollow{
+    /*margin: 0;*/
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+li.posts{
+    /*margin: 0;*/
+    display: list-item;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+li.followers{
+    /*margin: 0;*/
+    display: list-item;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+li.following{
+    /*margin: 0;*/
+    display: list-item;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+@media (min-width: 735px)
+{
+    article.fs {
+        box-sizing: content-box;
+        margin: 78px auto 30px;
+        width: calc(100% - 40px);
+        padding: 60px 20px 0;
+    }
+
+    header.profile{
+        margin-bottom: 44px;
+    }
+
+    div.leftprofile{
+        flex-basis: 0;
+        flex-grow: 1;
+        margin-right: 30px;
+        padding: 0;
+    }
+
+    div.leftprofpicsize{
+        height: 152px;
+        width: 152px;
+    }
+
+    div.header{
+        margin-bottom: 20px;
+    }
+
+    section.rightprofile{
+        flex-grow: 2;
+        flex-basis: 30px;
+        -webkit-box-flex: 2;
+    }
+
+    h1.profilename{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 200;
+    }
+
+    button.editprof{
+        padding: 0 24px;
+    }
+
+    div.comment{
+        font-size: 16px;
+        line-height: 24px;
+        word-wrap: break-word;
+    }
+
+    a.postnsave{
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 734px)
+{
+    article.fs {
+        box-sizing: content-box;
+        margin: 0 auto 30px;
+        width: calc(100% - 40px);
+        /*padding: 60px 20px 0;*/
+        padding: 0;
+    }
+
+    header.profile{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 30px;
+        border-bottom: none;
+        margin-bottom: 24px;
+        padding-bottom: 0;
+    }
+
+    div.leftprofile{
+        flex-basis: 0;
+        flex-grow: 1;
+        margin-right: 30px;
+        /*margin: 0;*/
+        padding: 0;
+    }
+
+    div.leftprofpicsize{
+        height: 77px;
+        width: 77px;
+    }
+
+    div.header{
+        margin-bottom: 20px;
+    }
+
+    section.rightprofile{
+        flex-grow: 2;
+        flex-basis: 30px;
+        -webkit-box-flex: 2;
+    }
+
+    h1.profilename{
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 200;
+    }
+
+    button.editprof{
+        padding: 0 24px;
+    }
+
+    div.comment{
+        font-size: 16px;
+        line-height: 24px;
+        word-wrap: break-word;
+    }
+
+    a.postnsave{
+        margin-right: 60px;
+    }
+}
+
+video#vid{
+    padding: 0;
+    margin: 0 auto;
+    height: 450px;
+    width: 450px;
+}
